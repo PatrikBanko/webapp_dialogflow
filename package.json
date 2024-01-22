@@ -1,0 +1,16 @@
+{
+    "name": "knjiznica-forza-webhook",
+    "version": "1.0.0",
+    "description": "Knjiznica Forza Webhook",
+    "main": "index.js",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Tim Forza",
+    "license": "ISC",
+    "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.72.0"
+    }
+    }
