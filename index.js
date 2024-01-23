@@ -22,7 +22,8 @@ res.send('Zakasnina iznosi 7 centi po danu kašnjenja. Koliko dana kasnite s vra
 
 app.post('/zakasnina/', function (req, res) {
     console.log(JSON.stringify(req.body));
-    var dani_kasnjenja = req.body.result.parameters.dani_kasnjenja;
+    //var dani_kasnjenja = req.body.result.parameters.dani_kasnjenja;
+    const dani_kasnjenja = req.body.queryResult.parameters && req.body.queryResult.parameters.dani_kasnjenja;
     var cijena_po_danu = 0.07
     var ukupni_iznos = dani_kasnjenja * cijena_po_danu;
     
