@@ -15,8 +15,9 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 // Index route
-app.get('/', function (req, res) {
+app.get('/zakasnina/', function (req, res) {
 res.send('Zakasnina iznosi 7 centi po danu kašnjenja. Koliko dana kasnite s vraćanjem knjige?')
+
 })
 
 app.post('/zakasnina/', function (req, res) {
